@@ -1,0 +1,239 @@
+/* Container styling */
+.table-container {
+    margin-left: 320px;
+    margin-top: 2px;
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners for entire table box */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Table styling */
+  .table-container table {
+    font-size: 14px; /* Smaller font */
+    background-color: white;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Keeps the rounded effect */
+  }
+  
+  /* Table header */
+  .table-container th {
+    background-color: gray;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  /* Table rows */
+  .table-container td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Status Button Styling */
+  .status-button {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    min-width: 80px;
+    cursor: pointer; /* Make the status buttons clickable */
+    transition: 0.3s ease-in-out;
+  }
+  
+  /* Green shade for online */
+  .online {
+    background-color: #28a745; /* Soft green */
+    color: white;
+    cursor: pointer;
+  }
+  
+  .online:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  /* Black for offline */
+  .offline {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .offline:hover {
+    background-color: #222; /* Slightly darker black on hover */
+  }
+  
+  /* Edit Button */
+  .edit-button {
+    padding: 6px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Make edit button clickable */
+    transition: 0.3s ease-in-out;
+  }
+  
+  .edit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  /* Project Table Container */
+.project-table-container {
+    margin-left: 320px;
+    margin-top: 10px;
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+    ;
+  }
+  
+  /* Table Styling */
+  .project-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  /* Table Header */
+  .project-header {
+    background-color: gray;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 14px;
+    text-align: left;
+  }
+  
+  /* Table Rows */
+  .project-row {
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Project Name with Icon */
+  .project-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+  }
+  
+  /* Icons in Project Column */
+  /* .project-icon-style {
+    font-size: 30px;
+    color: #555;
+  } */
+
+  .project-icon-style, 
+.project-menu-icon {
+  font-size: 30px !important; /* Ensures all icons are same size */
+  color: #555 ; /* Keeps a consistent color */
+  vertical-align: middle; /* Aligns properly with text */
+  display: inline-block;
+}
+  
+  /* Status Badges */
+  .project-status-badge {
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    min-width: 80px;
+    text-align: center;
+    color: white;
+  }
+  
+  .status-working {
+    background-color: #007bff; /* Blue */
+  }
+  
+  .status-done {
+    background-color: #28a745; /* Green */
+  }
+  
+  .status-canceled {
+    background-color: #dc3545; /* Red */
+  }
+  
+  /* Progress Bar */
+  .progress-wrapper {
+    background-color: #e9ecef;
+    border-radius: 5px;
+    width: 120px;
+    height: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .progress-0 {
+    background-color: #dc3545;
+    width: 0%;
+  }
+  
+  .progress-30 {
+    background-color: #ffc107;
+    width: 30%;
+  }
+  
+  .progress-60 {
+    background-color: #17a2b8;
+    width: 60%;
+  }
+  
+  .progress-80 {
+    background-color: #007bff;
+    width: 80%;
+  }
+  
+  .progress-100 {
+    background-color: #28a745;
+    width: 100%;
+  }
+  
+  /* Three-dot menu */
+  .project-menu-icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Adjusting Column Widths */
+  .project-table th:nth-child(1), 
+  .project-table td:nth-child(1) { width: 40%; }  /* Project */
+  .project-table th:nth-child(2), 
+  .project-table td:nth-child(2) { width: 15%; }  /* Budget */
+  .project-table th:nth-child(3), 
+  .project-table td:nth-child(3) { width: 15%; }  /* Status */
+  .project-table th:nth-child(4), 
+  .project-table td:nth-child(4) { width: 20%; }  /* Completion */
+  .project-table th:nth-child(5), 
+  .project-table td:nth-child(5) { width: 10%; text-align: center; }  /* Action */
+  
+  /* Hover Effect */
+  .project-table tbody tr:hover {
+    background-color: #f8f9fa;
+  }
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }

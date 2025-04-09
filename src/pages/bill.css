@@ -1,0 +1,24 @@
+#orange{
+    color: red  ;
+    transition: background-color 3s  ,color 3s ;
+}
+#orange:hover{
+    background-color: #f4493a ;
+    color: white;
+}
+#gray{
+    color: green  ;
+    transition: background-color 3s  ,color 3s ;
+}
+#gray:hover{
+    background-color: gray;
+    color: white;
+}
+.loss:hover{
+    box-shadow: 5px 0px 30px red;
+    
+}
+.profit:hover{
+    box-shadow: 5px 0px 30px green;
+    
+}

@@ -1,0 +1,85 @@
+.dot{
+    list-style: none;
+    width: 200px;
+    height: 100px;
+    visibility: hidden;
+    position: absolute;
+    left: 35%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    box-shadow: 5px 5px 30px gray;
+    outline: 2px solid black;
+    top:"-10px"
+}
+.dot1{
+    cursor: pointer;
+    position: relative;
+    top: -10px;
+    left: 30%;
+
+   
+}
+
+.dot1:active .dot{
+    visibility: visible;
+}
+.education-container{
+    position: relative;
+    display: block;
+    margin: 0;
+  }
+  .edu-list{
+    position: relative;
+    display: block;
+    margin: 0 50px;
+    list-style: none;
+  }
+  .edu-list > li{
+    width: 200px;;
+  background: transparent;
+  border: 1px solid green;
+  border-radius: 10px;
+    position: relative;
+    margin: 0 0 30px;
+    padding: 25px 25px 25px 25px;
+    font-size: 10px;
+  }
+ 
+ 
+  
+  
+  .edu-list > li:not(:last-child)::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: -27px;
+    width: 3px;
+    height: 100%;
+    background: gray;
+  }
+  .edu-list > li::after{
+  content: "";
+    position: absolute;
+    top: 0;
+  left: -50px;
+  width: 50px;
+  height: 50px;
+    line-height: 50px;
+  border-radius: 100%;
+  text-align: center;
+    font-size: 20px;
+    font-family: 'et-line';
+    background: black;
+    color: #fff;
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    -webkit-transition: all .3s ease;
+       -moz-transition: all .3s ease;
+            transition: all .3s ease;
+  }
+  
+
+
+
+ 

@@ -1,0 +1,26 @@
+.dashboard:hover{
+    background-color: gray;
+    cursor: pointer;
+
+}
+.reach:hover{
+    text-decoration: underline;
+    color: blueviolet;
+    font-size: 17px;
+
+}
+.reach{
+    transition: color 3s , fontSize 3s;
+}
+.heart{
+    transition: color 5s ;
+}
+.heart:hover{
+    
+    color: red;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

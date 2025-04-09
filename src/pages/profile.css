@@ -1,0 +1,36 @@
+.name::first-letter {
+    color: purple;
+    font-weight: 900;
+  
+    font-size: 25px;
+
+
+}
+.name{
+    font-size:16px;
+    color: gray;
+    text-decoration: underline;
+    font-weight: 900;
+
+}
+.pic{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.profile_btn{
+    font-size: 16px;
+    background-color:#D3D3D3;
+
+}
+.profile_btn:hover{
+    background-color: white;
+}
+.project:hover{
+    box-shadow: 5px 5px 30px lime;
+
+}
+.project{
+    border: 1px solid lime !important;
+}
+
